@@ -6,4 +6,6 @@ que.Enqueue(56);
 que.Enqueue(30);
 que.Enqueue(70);
 que.display();
+que.Dequeue();
+que.display();
 
