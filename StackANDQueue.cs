@@ -27,6 +27,28 @@ namespace Stack_ad_Queue
             top = node;
             Console.WriteLine("Pushed nodewith data "+node.data);
         }
+        public void pop()                   //single node is poped
+        {
+            Node temp = top;
+            if (top != null)
+            {
+                Console.WriteLine("Data of the poped node is " + temp.data);
+                top = temp.next;
+            }
+            else
+                Console.WriteLine("Stack is empty");
+        }
+        public void fullpop()                       //pop function till the statck is empty
+        {
+
+            while (top != null)
+            {
+                Node temp = top;
+                Console.WriteLine("Data of the poped node is " + top.data);
+                top = temp.next;
+            }
+                Console.WriteLine("Stack is empty");
+        }
         public void print()
         {
             Node temp = top;
