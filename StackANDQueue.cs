@@ -40,7 +40,6 @@ namespace Stack_ad_Queue
         }
         public void fullpop()                       //pop function till the statck is empty
         {
-
             while (top != null)
             {
                 Node temp = top;
@@ -48,6 +47,24 @@ namespace Stack_ad_Queue
                 top = temp.next;
             }
                 Console.WriteLine("Stack is empty");
+        }
+        public void peek()                  //gives the top most node data without popping it
+        {
+            if(this.top!=null)
+            {
+                Console.WriteLine("top element is "+top.data);
+            }
+            else
+                Console.WriteLine("Stack is empty");
+        }
+        public void empty()                 //To check if the stackis empty
+        {
+            if (this.top == null)
+            {
+                Console.WriteLine("Stack is empty");
+            }
+            else
+                Console.WriteLine("Stack is not empty");
         }
         public void print()
         {

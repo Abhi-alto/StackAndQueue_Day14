@@ -5,7 +5,7 @@ datatype.push(70);
 datatype.push(30);
 datatype.push(56);
 datatype.print();
-datatype.fullpop();
-/*datatype.print();
+datatype.peek();
+datatype.print();
 datatype.pop();
-datatype.print();*/
+datatype.print();
